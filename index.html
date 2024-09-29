@@ -6,11 +6,113 @@
     <title>Document</title>
   </head>
   <body>
-    <!--intro section-->
-    <header>
+    <!--section: navbar-->
+    <nav>
+      <ul>
+        <li><a href="#about me">About me</a></li>
+      </ul>
+      <ul>
+        <li><a href="#skill">skill</a></li>
+      </ul>
+      <ul>
+        <li><a href="#project">project</a></li>
+      </ul>
+      <ul>
+        <li><a href="#contact me">Contact</a></li>
+      </ul>
+    </nav>
+    <!--section: intro-->
+    <header id="intro">
       <h1>Mohammad Shakil</h1>
-      <p>Web developer and computer science student</p>
+      <p><em>Web developer and computer science student</em></p>
+      <a href="https://www.youtube.com/@reactoryt563">
+        <img src="./images/shakil.jpg" alt="Mohammad Shakil" height="200"
+      /></a>
       <hr />
     </header>
+
+    <!--section: about me-->
+    <section id="about me">
+      <h2>About me</h2>
+      <p><strong>Experience:</strong> 1 year experience in web development</p>
+      <p>
+        <strong>Education:</strong> Study at bacholer science and engineerig
+      </p>
+    </section>
+
+    <!--Skill section-->
+    <section id="skill">
+      <h2>Skill</h2>
+      <table border="1" cellpadding="5" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Technology</th>
+            <th>Proficiency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Beggener</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Beggener</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!--Section: project-->
+    <section id="project">
+      <h2>Project</h2>
+      <ol>
+        <li>
+          <a
+            target="_blank"
+            href="https://github.com/shakilahmed6652/shakilahmed6652"
+            >portfolio website</a
+          >
+        </li>
+        <li>blog website</li>
+        <li>E-commerece website</li>
+      </ol>
+    </section>
+
+    <!--section: contact-->
+    <section id="contact">
+      <h2>Contact</h2>
+    </section>
+    <form>
+      <div>
+        <label for="name">Name :</label>
+        <input type="text" id="name" required />
+      </div>
+
+      <div>
+        <label for="email">Email :</label>
+        <input type="text" id="email" required />
+      </div>
+
+      <div>
+        <label for="mssage">Message :</label>
+        <textarea name="message" id="message" cols="20" rows="10"></textarea>
+      </div>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
+    </form>
+
+    <!--section footer-->
+    <footer>
+      <p>Copyright reserve by &copy; Mohammad shakil</p>
+      <p>Development with &hearts;</p>
+      <a href="tel:01620177408">Call me</a>
+      <a href="mailto:mohammadshakil6653@.com">Email me</a>
+    </footer>
   </body>
 </html>

@@ -25,3 +25,21 @@
    - Debugging
    - comment
 8. Heading, paragraph, line breaks, horizontal line
+9. semantic HTML VS Non-semantic HTML
+   - semantic tag - header, footer, main
+   - non-semantic - div, span
+10. Taxt formtting tags
+11. Entity
+12. list
+
+- ordered list, unorderd list, defination list, nested list
+
+12. link and Navigatio
+
+- absolut link vs relative link
+- a tag, attributes: href, target, title
+
+13. images
+14. Basic table
+15. Basic form
+16. deploy
