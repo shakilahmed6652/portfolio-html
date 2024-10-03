@@ -3,116 +3,225 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="keywords" content="portfolio, html, mohammad shakil" />
+    <meta name="author" content="mohammad shakil" />
+    <meta
+      name="description"
+      content="mohammad shakil is a web development student"
+    />
     <title>Document</title>
+    <!--font awesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: rgb(245, 231, 212);
+        font-family: "Inter", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <!--section: navbar-->
-    <nav>
-      <ul>
-        <li><a href="#about me">About me</a></li>
-      </ul>
-      <ul>
-        <li><a href="#skill">skill</a></li>
-      </ul>
-      <ul>
-        <li><a href="#project">project</a></li>
-      </ul>
-      <ul>
-        <li><a href="#contact me">Contact</a></li>
-      </ul>
-    </nav>
-    <!--section: intro-->
-    <header id="intro">
-      <h1>Mohammad Shakil</h1>
-      <p><em>Web developer and computer science student</em></p>
-      <a href="https://www.youtube.com/@reactoryt563">
-        <img src="./images/shakil.jpg" alt="Mohammad Shakil" height="200"
-      /></a>
-      <hr />
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about me">About me</a></li>
+        </ul>
+        <ul>
+          <li><a href="#skill">skill</a></li>
+        </ul>
+        <ul>
+          <li><a href="#project">project</a></li>
+        </ul>
+        <ul>
+          <li><a href="#contact me">Contact</a></li>
+        </ul>
+      </nav>
     </header>
+    <!--section: intro-->
+    <main>
+      <section id="intro">
+        <h1>Mohammad Shakil</h1>
+        <p><em>Web developer and computer science student</em></p>
+        <a href="https://www.youtube.com/@reactoryt563">
+          <img src="./images/shakil.jpg" alt="Mohammad Shakil" height="200"
+        /></a>
+        <hr />
+      </section>
 
-    <!--section: about me-->
-    <section id="about me">
-      <h2>About me</h2>
-      <p><strong>Experience:</strong> 1 year experience in web development</p>
-      <p>
-        <strong>Education:</strong> Study at bacholer science and engineerig
-      </p>
-    </section>
+      <!--section: about me-->
+      <section id="about me">
+        <h2>About me</h2>
+        <p><strong>Experience:</strong> 1 year experience in web development</p>
+        <p>
+          <strong>Education:</strong> Study at bacholer science and engineerig
+        </p>
+      </section>
 
-    <!--Skill section-->
-    <section id="skill">
-      <h2>Skill</h2>
-      <table border="1" cellpadding="5" cellspacing="0">
-        <thead>
-          <tr>
-            <th>Technology</th>
-            <th>Proficiency</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-            <td>Intermediate</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>Beggener</td>
-          </tr>
-          <tr>
-            <td>JavaScript</td>
-            <td>Beggener</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <!--section: skill-->
+      <section id="skill">
+        <h2>Skill</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Technology</th>
+              <th>Proficiency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML</td>
+              <td>Intermediate</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Beggener</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Beggener</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Skill Progress</h3>
+        <div>
+          <label for="htmlprogress">HTML: </label>
+          <progress id="htmlprogress" value="90" max="100">90%</progress>
+        </div>
+        <div>
+          <label for="cssprogress">CSS: </label>
+          <progress id="cssprogress" value="80" max="100">80%</progress>
+        </div>
+        <div>
+          <label for="jsprogress">Js: </label>
+          <progress id="jsprogress" value="70" max="100">70%</progress>
+        </div>
+        <div>
+          <label for="experience"><strong>Experience:</strong></label>
+          <meter id="experience" min="0" max="10" value="5"></meter>
+        </div>
+      </section>
 
-    <!--Section: project-->
-    <section id="project">
-      <h2>Project</h2>
-      <ol>
-        <li>
-          <a
-            target="_blank"
-            href="https://github.com/shakilahmed6652/shakilahmed6652"
-            >portfolio website</a
-          >
-        </li>
-        <li>blog website</li>
-        <li>E-commerece website</li>
-      </ol>
-    </section>
+      <!--Section: project-->
+      <section id="project">
+        <h2>Project</h2>
+        <ol>
+          <li>
+            <a
+              target="_blank"
+              href="https://github.com/shakilahmed6652/shakilahmed6652"
+              >portfolio website</a
+            >
+          </li>
+          <li>blog website</li>
+          <li>E-commerece website</li>
+        </ol>
+      </section>
 
-    <!--section: contact-->
-    <section id="contact">
-      <h2>Contact</h2>
-    </section>
-    <form>
-      <div>
-        <label for="name">Name :</label>
-        <input type="text" id="name" required />
-      </div>
+      <video width="300" controls>
+        <source src="./assets/video/Video/memories.mp4" type="video/mp4" />
+      </video>
+      this video is not support on your device
 
-      <div>
-        <label for="email">Email :</label>
-        <input type="text" id="email" required />
-      </div>
+      <!--section: contact-->
+      <section id="contact">
+        <h2>Contact</h2>
+        <form>
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+          </div>
 
-      <div>
-        <label for="mssage">Message :</label>
-        <textarea name="message" id="message" cols="20" rows="10"></textarea>
-      </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="text" id="email" required />
+          </div>
 
-      <button type="submit">Submit</button>
-      <button type="reset">Clear</button>
-    </form>
+          <div>
+            <label for="age">age:</label>
+            <input type="number" id="age" max="50" min="18" required />
+          </div>
+          <div>
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website" />
+          </div>
+          <div>
+            <label for="subject">Subject:</label>
+            <select name="subject" id="subject">
+              <option value="inquary">Inquary</option>
+              <option value="Feedback">Feedback</option>
+              <option value="Job">Job opportunity</option>
+            </select>
+          </div>
+          <div>
+            <label for="images">Upload image:</label>
+            <input type="file" id="image" name="image" accept="image/" />
+          </div>
+          <div>
+            <label for="message">Message :</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="20"
+              rows="10"
+            ></textarea>
+          </div>
 
-    <!--section footer-->
+          <button type="submit">Submit</button>
+          <button type="reset">Clear</button>
+        </form>
+      </section>
+    </main>
+
+    <!--footer-->
     <footer>
       <p>Copyright reserve by &copy; Mohammad shakil</p>
       <p>Development with &hearts;</p>
       <a href="tel:01620177408">Call me</a>
       <a href="mailto:mohammadshakil6653@.com">Email me</a>
+      <h3>Follow me</h3>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/profile.php?id=100041549796468">
+            <i class="fa-brands fa-facebook"> </i
+          ></a>
+          Facebook page
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/shakil-ahmed-738b26206/">
+            <i class="fa-brands fa-linkedin"></i
+          ></a>
+          linkedin
+        </li>
+      </ul>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3096.3514920686393!2d91.76518474612251!3d22.64621031383299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37532b71fbe6267b%3A0xd101527fde2b6f80!2sSuabil!5e0!3m2!1sen!2sbd!4v1727893406390!5m2!1sen!2sbd"
+          title="My home address"
+          width="300"
+          height="250"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </footer>
   </body>
 </html>
